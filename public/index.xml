@@ -11,17 +11,53 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Oct 2023 08:41:45 +0800</lastBuildDate><atom:link href="https://yellow-smoke-038d99800.4.azurestaticapps.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Oct 2023 21:42:22 +0800</lastBuildDate><atom:link href="https://yellow-smoke-038d99800.4.azurestaticapps.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://yellow-smoke-038d99800.4.azurestaticapps.net/posts/my-first-post/</link>
-      <pubDate>Fri, 20 Oct 2023 08:41:45 +0800</pubDate>
+      <title>Cs61b Proj2</title>
+      <link>https://yellow-smoke-038d99800.4.azurestaticapps.net/posts/cs61b-proj2/</link>
+      <pubDate>Fri, 20 Oct 2023 21:42:22 +0800</pubDate>
       
-      <guid>https://yellow-smoke-038d99800.4.azurestaticapps.net/posts/my-first-post/</guid>
-      <description>Add a new page to your site.
-hugo new content posts/my-first-post.md Hugo created the file in the content/posts directory. Open the file with your editor.
-Notice the draft value in the front matter is true. By default, Hugo does not publish draft content when you build the site. Learn more about draft, future, and expired content.
-Add some markdown to the body of the post, but do not change the draft value.</description>
+      <guid>https://yellow-smoke-038d99800.4.azurestaticapps.net/posts/cs61b-proj2/</guid>
+      <description>project2的代码在这里！
+Lab5: Getting started lab5
+推荐先做一下lab5，可以熟悉一个tile engine，并且会给很多proj2的提示。
+Project2：phase1 目标：
+创造一个充满room和hallway的迷宫！
+添加图片注释，不超过 140 字（可选）
+我的思维过程如下
+First：
+从proj2得到的灵感是，既然六边形可以对齐然后堆叠，那么正方形也可以用同样的思路，所以我
+先在随机位置创建一个随机大小的方块
+设定下一个方块的大小（随机）
+于随机的方向放置下一个方块
+将当前位置移动到下一个方块的左下角
+重复过程2～4，直到迷宫增长到一定上限
+因为空间的size是随机的，所以要么是通道（一条边为1）要么是房间，那就满足了实验要求。
+但是从结果来看，并没有很理想，因为我没有考虑到不同房间之间的堆叠，而且因为是从一个点出发，所以很容易在点的附近创建出很大的不规则空洞，最后迷宫很丑。
+map1.0
+Second：
+这次，我在每次增长一个房间时，都把它们放在一个List中，然后每次增长时，额外判断一下room和room之间有没有重叠，这样，就避免了room的重叠问题。
+这样做有一个弊端，就是容易陷入死胡同，也就是如果当前位置周围没有足够空间时，需要重新resize，然后再判断，如果还不行就一直循环。所以在这里会有一直循环的风险，我的做法是在循环时加入一个loopCnt，循环到一定次数就放弃这个分支，去找另一个分支去（也就是在room集合中再找一个）
+while (!hasSpaceOnAllDirection(p, s, nextSize, null)) { nextSize = randomSize(random); loopCnt++; if (loopCnt &amp;gt; 4) { p = randomRoom(random).p; loopCnt = 0; } } } 最后的成品如下，感觉还是不很理想，问题应该出在我的算法始终还是基于随机的room大小，所以很容易出现多个room堆在一起组合成一个怪物的情况。
+map2.0
+Third：
+这一次，我将之前的方法全部推翻，该用“先生成rooms，再生成hallways”的方法，也就是先在地图上随机生成一定数量的rooms，然后用宽度为1的path去连接他们。
+room的随机生成非常简单，每一个room的大小、位置都是随机的，如果在该位置不能放置，那么就再生成一次，直到生成的room数量达到上限（roomMax）
+路径的连接比较麻烦，但是不难
+首先就是要解决，如何确定两个房间的连接点。我参考了这篇回答，就是根据两个room的相对位置，如果是左右型，那就水平方向上，用Z字型连接，如果是上下型，就上下方向上用垂直连接。连接点的确立就非常直觉化了，就在它们相对的那个面上，随机取一个连接点即可。
+添加图片注释，不超过 140 字（可选）
+最后，将生成的rooms按照顺序连接起来即可，因为我们的rooms的生成是散落在各处，所以会导致路径重叠在一起很丑，我用了一个非常简陋的解决办法，就是根据room的横坐标大小排序一下，然后根据排好的顺序连接，这样就能避免两个很远的room进行连接。 map3.0
+最后把locked door加上即可。 Project2：phase2 Starting 先完成Lab6，了解一下StdDraw的原理，因为phase2中会直接地大量用到。
+Main：Overview 我的文件结构如下，也是我构思整个实验的基础</description>
+    </item>
+    
+    <item>
+      <title>Another</title>
+      <link>https://yellow-smoke-038d99800.4.azurestaticapps.net/posts/another/</link>
+      <pubDate>Fri, 20 Oct 2023 12:23:12 +0800</pubDate>
+      
+      <guid>https://yellow-smoke-038d99800.4.azurestaticapps.net/posts/another/</guid>
+      <description>A New Post </description>
     </item>
     
     

@@ -10,6 +10,16 @@
       <link>https://yellow-smoke-038d99800.4.azurestaticapps.net/duola.PNG</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://yellow-smoke-038d99800.4.azurestaticapps.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Oct 2023 21:42:22 +0800</lastBuildDate><atom:link href="https://yellow-smoke-038d99800.4.azurestaticapps.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>one</title>
+      <link>https://yellow-smoke-038d99800.4.azurestaticapps.net/categories/one/</link>
+      <pubDate>Fri, 20 Oct 2023 21:42:22 +0800</pubDate>
+      
+      <guid>https://yellow-smoke-038d99800.4.azurestaticapps.net/categories/one/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -10,6 +10,34 @@
       <link>https://yellow-smoke-038d99800.4.azurestaticapps.net/duola.PNG</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://yellow-smoke-038d99800.4.azurestaticapps.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Oct 2023 21:42:22 +0800</lastBuildDate><atom:link href="https://yellow-smoke-038d99800.4.azurestaticapps.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>four</title>
+      <link>https://yellow-smoke-038d99800.4.azurestaticapps.net/tags/four/</link>
+      <pubDate>Fri, 20 Oct 2023 21:42:22 +0800</pubDate>
+      
+      <guid>https://yellow-smoke-038d99800.4.azurestaticapps.net/tags/four/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>three</title>
+      <link>https://yellow-smoke-038d99800.4.azurestaticapps.net/tags/three/</link>
+      <pubDate>Fri, 20 Oct 2023 21:42:22 +0800</pubDate>
+      
+      <guid>https://yellow-smoke-038d99800.4.azurestaticapps.net/tags/three/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>two</title>
+      <link>https://yellow-smoke-038d99800.4.azurestaticapps.net/tags/two/</link>
+      <pubDate>Fri, 20 Oct 2023 21:42:22 +0800</pubDate>
+      
+      <guid>https://yellow-smoke-038d99800.4.azurestaticapps.net/tags/two/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
