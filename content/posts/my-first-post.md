@@ -1,7 +1,7 @@
 ---
 title: "My First Post"
 date: 2023-10-20T08:41:45+08:00
-draft: true
+draft: false
 ---
 
 Add a new page to your site.
