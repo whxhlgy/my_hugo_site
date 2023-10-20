@@ -1,7 +1,13 @@
 ---
 title: Cs61b Proj2
 date: 2023-10-20T21:42:22+08:00
-draft: true
+draft: false
+categories:
+- one
+tags:
+- two
+- three
+- four
 ---
 
 [project2的代码在这里！](https://github.com/whxhlgy/cs61b-sp18/tree/main/proj2/byog)
