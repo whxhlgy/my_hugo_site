@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>http://example.org/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on whxhlgy</title>
+    <link>https://whxhlgy.com/posts/</link>
+    <description>Recent content in Posts on whxhlgy</description>
+    <image>
+      <title>whxhlgy</title>
+      <url>https://whxhlgy.com/duola.PNG</url>
+      <link>https://whxhlgy.com/duola.PNG</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 20 Oct 2023 12:23:12 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Another</title>
-      <link>http://example.org/posts/another/</link>
-      <pubDate>Fri, 20 Oct 2023 12:23:12 +0800</pubDate>
-      
-      <guid>http://example.org/posts/another/</guid>
-      <description>A New Post </description>
-    </item>
-    
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Oct 2023 08:41:45 +0800</lastBuildDate><atom:link href="https://whxhlgy.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>https://whxhlgy.com/posts/my-first-post/</link>
       <pubDate>Fri, 20 Oct 2023 08:41:45 +0800</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>https://whxhlgy.com/posts/my-first-post/</guid>
       <description>Add a new page to your site.
 hugo new content posts/my-first-post.md Hugo created the file in the content/posts directory. Open the file with your editor.
 Notice the draft value in the front matter is true. By default, Hugo does not publish draft content when you build the site. Learn more about draft, future, and expired content.
